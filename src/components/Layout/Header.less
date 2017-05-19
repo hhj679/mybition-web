@@ -1,0 +1,119 @@
+@import "../../themes/vars.less";
+
+.header {
+  :global .ant-menu-horizontal {
+    & > .ant-menu-submenu {
+      float: right;
+    }
+    border: none;
+    display: inline-block;
+  }
+  box-shadow: @shadow-2;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+  background-color: #fff;
+
+  .leftWarpper {
+    display: flex;
+    position: absolute;
+    margin: 10px 50px;
+
+    .nameLimit {
+      color: #383838;
+      cursor: pointer;
+      font-size: 17px;
+      width: 100px;
+    }
+
+    .searchInput {
+      border-radius: 37px;
+      background: #FAFAFA;
+      color: #A6A6A6;
+      width: 272px;
+      font-size: 14px;
+    }
+
+    .plusIcon {
+      color: #3da8f5;
+      font-size: 24px;
+      line-height: 28px;
+      cursor: pointer;
+    }
+  }
+
+  .rightWarpper {
+    display: flex;
+
+    .question {
+      font-size: 20px;
+      cursor: pointer;
+      color: #CCC;
+    }
+
+    .message {
+      font-size: 20px;
+      cursor: pointer;
+      color: #808080;
+    }
+
+    .avatar {
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      margin: 8px;
+      cursor: pointer;
+    }
+
+    .menuItem {
+      color: #383838;
+      font-size: 14px;
+      height: 40px;
+    }
+  }
+
+  .button {
+    width: 47px;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    transition: @transition-ease-in;
+
+    &:hover {
+      color: @primary-color;
+      background-color: fade(@primary-color, 15%);
+    }
+  }
+
+  .siderFold {
+    font-size: 14px;
+    color: #CCCCC !important;
+  }
+}
+
+.popovermenu {
+  width: 280px;
+  margin-left: 6px;
+
+  :global .ant-popover-inner-content {
+    padding: 0;
+
+    .ant-menu-inline .ant-menu-item,
+    .ant-menu-vertical .ant-menu-item {
+      border-right: 0;
+      height: 48px;
+      line-height: 48px;
+    }
+
+    .ant-menu-inline .ant-menu-item-selected,
+    .ant-menu-inline .ant-menu-selected {
+      border-right: 0;
+    }
+  }
+}
