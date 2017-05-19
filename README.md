@@ -53,7 +53,7 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 
 克隆项目文件:
 
-    git clone https://github.com/zuiidea/antd-admin.git
+    git clone https://github.com/hhj679/mybition-web.git
 
 进入目录安装依赖:
 
@@ -63,7 +63,7 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 
 ```bash
 npm run dev
-打开 http://localhost:8000
+打开 http://localhost:8001
 ```
 
 构建：
