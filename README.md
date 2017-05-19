@@ -1,4 +1,4 @@
-#Mybition
+# Mybition
 
 ## …or create a new repository on the command line
 echo "# mybition-web" >> README.md
